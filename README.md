@@ -3,7 +3,7 @@ Computational Creativity Assignment M9. Casual Creator that simulates a snow glo
 
 ## Brainstorming
 (1) What are your users casually creating?
-My users are casually creating an art piece inspired by the flow of a snowglobe. They can draw a design and then watch it slowly fall to the bottom of the screen. 
+My users are casually creating an art piece inspired by the flow of a snow globe. They can draw a design and then watch it slowly fall to the bottom of the screen. 
 
 (2) How do you keep them engaged and excited to create?
 I keep them engaged with the calming sparkling of the snowflakes and their movement. The designs made are erased by the fall of the snowflakes, so
@@ -24,5 +24,5 @@ over again offer the user an easy and stress-free way to make something beautifu
 
 ## Challenge 
 How did you push yourself outside of your comfort zone?
-Why was this an important challenge for you? 
-What are the next steps for you going forward?
+I pushed myself out of my comfort zone by including options for the user to stop the fall of snowflakes and shake the snowglobe. I had to figure out where these variables would need to be passed in order to actually start and stop the movement of the snowflakes. At first, I thought that making a global variable would work, but ended up deciding that it was necessary to keep track for each individual snowflake. I then had to figure out how the user could shake or suspend. Through looking examples of processing, I was able to figure out that I could use the keyboard to interact with the program. This was an important challenge for me because it taught me how to look through documentation and examples for a language that I was completely unfamiliar with. 
+Going forward, I could have implemented a feature that where you draw impacts where the surrounding snowflakes move.
