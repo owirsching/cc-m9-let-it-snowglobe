@@ -1,5 +1,5 @@
 # cc-m9-let-it-snowglobe
-Computational Creativity Assignment M9. Casual Creator that simulates a snow globe that can be shaken and suspended.
+Computational Creativity Assignment M9. A Casual Creator that simulates a snow globe that can be shaken and suspended. The user can draw on a canvas with glittering snowflakes following their mouse that fall as if they were in a snow globe. 
 
 ## How to Run
 1. Bring `creator.pjs` into a IDE like https://openprocessing.org/
