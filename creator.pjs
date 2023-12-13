@@ -14,8 +14,6 @@ class Snowflake {
 
     // Store a reference to the canvas
     private PApplet canvas;
-	
-		private float isShaking = 0;
 
     Snowflake(PApplet canvas, float x, float y) {
         // Store a reference to the canvas
@@ -29,52 +27,52 @@ class Snowflake {
         size = this.canvas.random(2,4);
 
         // Snowflake color options
-				this.colors = [[171, 209, 243], [194, 224, 249], [250, 250, 250], [223, 247, 250], [220,243,255], [245,251,255], 	[231,245,255], [217,239,255], [124,164,197]]
+	this.colors = [[171, 209, 243], [194, 224, 249], [250, 250, 250], [223, 247, 250], [220,243,255], [245,251,255], [231,245,255], [217,239,255], [124,164,197]]
 
         // Randomize speed of Snowflake falling 
         speedX = this.canvas.random(-0.25, 0.25);
         speedY = this.canvas.random(0.25, 1);
     }
 	
-		void display() {
-			/*
-			Displays the snowflake with a random color
-			*/
-			
-			// No outline
-			this.canvas.noStroke();
+	void display() {
+		/*
+		Displays the snowflake with a random color
+		*/
+		
+		// No outline
+		this.canvas.noStroke();
 
-			// Randomly fills the color of the Snowflake
-			ind = this.canvas.round(random(0, 8));
-			this.canvas.fill(this.colors[ind][0], this.colors[ind][1], this.colors[ind][2]);
+		// Randomly fills the color of the Snowflake
+		ind = this.canvas.round(random(0, 8));
+		this.canvas.fill(this.colors[ind][0], this.colors[ind][1], this.colors[ind][2]);
 
-			// Draws an ellipse on the screen to represent our Snowflake.
-			this.canvas.ellipse(x, y, size, size);
-	}
+		// Draws an ellipse on the screen to represent our Snowflake.
+		this.canvas.ellipse(x, y, size, size);
+}
 	
-		void move(isShaking, isStopped) {
-			/* 
-			Parameters: isShaking (bool), if the snowflake is shaking, 
-			isStopped (bool), if the snowflake is stopped
-			*/
+	void move(isShaking, isStopped) {
+		/* 
+		Parameters: isShaking (bool), if the snowflake is shaking, 
+		isStopped (bool), if the snowflake is stopped
+		*/
+		
+		if (isShaking) {
+			// If the Snowflake is shaking, move it fast
+			speedX_shake = this.canvas.random(-5, 5);
+			speedY_shake = this.canvas.random(-5, 5);
 			
-			if (isShaking) {
-				// If the Snowflake is shaking, move it fast
-				speedX_shake = this.canvas.random(-5, 5);
-      	speedY_shake = this.canvas.random(-5, 5);
-				
-				x += speedX_shake;
-				y += speedY_shake;
-			} else if (isStopped) {
-				// If the Snowflake is stopped, don't move it
-				x += 0;
-				y += 0;
-			}
-			else {
-				// Otherwise, move the Snowflake slowly
-				x += speedX;
-				y += speedY;
-			}
+			x += speedX_shake;
+			y += speedY_shake;
+		} else if (isStopped) {
+			// If the Snowflake is stopped, don't move it
+			x += 0;
+			y += 0;
+		}
+		else {
+			// Otherwise, move the Snowflake slowly
+			x += speedX;
+			y += speedY;
+		}
 	}
 	
 }
@@ -82,16 +80,16 @@ class Snowflake {
 // Create an array of Snowflakes
 Snowflake[] snowflakes = new Snowflake[1500];
 
-// How many Snowflakes we have already created.
+// How many Snowflakes we have already created
 int numSnowflakes = 0;
 
 // The current index position in our Snowflake array.
 int currentSnowflake = 0;
 
 void setup() {
-		/* 
-		Initializes the program 
-		*/
+	/* 
+	Initializes the program 
+	*/
   	size(500, 500, P3D);
 }
 
@@ -104,7 +102,7 @@ void draw() {
         // Make snowflake and save it where the mouse is clicked 
         snowflakes[currentSnowflake] = new Snowflake(this, mouseX, mouseY);
         
-				// Increase the number of Snowflakes drawn
+	// Increase the number of Snowflakes drawn
         currentSnowflake ++;
 
         // Increase our total snowflakes
