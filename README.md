@@ -7,7 +7,7 @@ Computational Creativity Assignment M9. A Casual Creator that simulates a snow g
 3. Hold the mouse down to draw snowflakes
 4. Press the 's' key to stop the snowflakes from falling
 5. Press the space key to shake the snow globe
-6. When you want to save your work, take a screen shot
+6. When you want to save your work, press 's' to stop the motion and take a screenshot
 
 ## Brainstorming
 (1) What are your users casually creating?
