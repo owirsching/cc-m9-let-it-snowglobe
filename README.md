@@ -5,9 +5,9 @@ Computational Creativity Assignment M9. A Casual Creator that simulates a snow g
 1. Bring `creator.pjs` into a IDE like https://openprocessing.org/
 2. Press play
 3. Hold the mouse down to draw snowflakes
-4. Press the 's' key to stop the snowflakes from falling
-5. Press the space key to shake the snow globe
-6. When you want to save your work, press 's' to stop the motion and take a screenshot
+4. Press the 's' key to stop the snowflakes from falling, press any other key to start snowflakes falling again
+5. Press the space key to shake the snow globe, press any other key to stop the shaking
+7. When you want to save your work, press 's' to stop the motion and take a screenshot
 
 ## Brainstorming
 (1) What are your users casually creating?
