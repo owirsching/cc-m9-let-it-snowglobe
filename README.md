@@ -32,3 +32,7 @@ over again offer the user an easy and stress-free way to make something beautifu
 
 ## Challenge 
 I pushed myself out of my comfort zone by including options for the user to stop the fall of snowflakes and shake the snowglobe. I had to figure out where these variables would need to be passed in order to actually start and stop the movement of the snowflakes. At first, I thought that making a global variable would work, but ended up deciding that it was necessary to keep track of each individual snowflake. I then had to figure out how the user could shake or suspend. Through looking examples of processing, I was able to figure out that I could use the keyboard to interact with the program. This was an important challenge for me because it taught me how to look through documentation and examples for a language that I was completely unfamiliar with. Going forward, I could have implemented a feature where your drawing impacts the surrounding snowflakes and makes them move.
+
+
+### Credit
+I learned how to interact with the program using the keyboard from this example: https://editor.p5js.org/ehagan/sketches/dlcBuy7NC
