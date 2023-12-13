@@ -1,6 +1,14 @@
 # cc-m9-let-it-snowglobe
 Computational Creativity Assignment M9. Casual Creator that simulates a snow globe that can be shaken and suspended.
 
+## How to Run
+1. Bring `creator.pjs` into a IDE like https://openprocessing.org/
+2. Press play
+3. Hold the mouse down to draw snowflakes
+4. Press the 's' key to stop the snowflakes from falling
+5. Press the space key to shake the snow globe
+6. When you want to save your work, take a screen shot
+
 ## Brainstorming
 (1) What are your users casually creating?
 My users are casually creating an art piece inspired by the flow of a snow globe. They can draw a design and then watch it slowly fall to the bottom of the screen. 
